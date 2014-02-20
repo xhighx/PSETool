@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/cont"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@android:color/background_light"
+	android:baselineAligned="false"
+	android:orientation="vertical"
+    android:padding="1dp">
+
+    <TextView
+        android:id="@+id/fragment_pseworksheet_descriptiontv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:showDividers="beginning"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:id="@+id/label_pseworksheet_sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item #:"
+                android:padding="1dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/fragment_pseworksheet_skutv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textSize="16dp"
+                android:hint="N/A"
+                android:layout_weight="0"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:id="@+id/label_pseworksheet_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model:"
+                android:padding="1dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+    android:id="@+id/fragment_pseworksheet_modeltv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+                android:ellipsize="end"
+    android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textSize="16dp"
+                android:hint="N/A"
+                android:gravity="right"
+                android:layout_weight="0"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:layout_margin="2dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/label_pseworksheet_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Margin(%):"
+                android:padding="1dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/fragment_pseworksheet_margintv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="24.58%"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:padding="1dp"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:id="@+id/label_pseworksheet_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="@string/label_cost"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:gravity="left"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/fragment_pseworksheet_costtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_currency_placeholder"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textSize="16dp"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:padding="1dp"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:id="@+id/label_pseworksheet_retail"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Retail:"
+                android:padding="1dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/fragment_pseworksheet_pricetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_currency_placeholder"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textSize="16sp"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:padding="1dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

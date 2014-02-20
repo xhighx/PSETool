@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+	<item
+    android:id="@+id/cart_menu_delete_all"
+    android:icon="@drawable/cart_cancel"
+    android:title="Delete All">
+</item>
+    <item
+        android:id="@+id/cart_menu_reset_all"
+        android:icon="@drawable/cart_del"
+        android:title="Reset All">
+    </item>
+
+</menu>

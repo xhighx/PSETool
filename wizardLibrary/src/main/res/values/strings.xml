@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="label_your_name">Name</string>
+    <string name="hint_your_name">e.g. Larry</string>
+    <string name="label_your_email">Email</string>
+    <string name="hint_your_email">Optional</string>
+    <string name="review">Review</string>
+    <string name="label_window_height">Window Height(in)</string>
+    <string name="label_window_width">Window Width(in)</string>
+    <string name="label_fence_length">Total Length</string>
+    <string name="label_fence_height">Height</string>
+    <string name="label_fence_walkgate">Walk Gate</string>
+    <string name="label_fence_drivegate">Drive Gate</string>
+    <string name="label_fence_removedisposefence">Remove Fence</string>
+    <string name="label_fence_concretepunchthru">Concrete Core</string>
+    <string name="label_fence_clearfenceline">Clear Debris</string>
+    <string name="label_custom_labor">Custom Labor($$)</string>
+    <string name="label_mileage">Mileage</string>
+    <string name="hint_inches">Inches</string>
+    <string name="hint_linear_feet">Linear Feet</string>
+
+</resources>

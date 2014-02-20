@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+		android:id="@+id/menu_wood_fence"
+		android:title="@string/ARG_CATEGORY_WOOD_FENCE">
+	</item>
+	<item
+		android:id="@+id/menu_chainlink_fence"
+		android:title="@string/ARG_CATEGORY_CHAINLINK_FENCE">
+	</item>
+	<item
+		android:id="@+id/menu_composite_fence"
+		android:title="@string/ARG_CATEGORY_COMPOSITE_FENCE">
+	</item>
+	<item
+		android:id="@+id/menu_metal_fence"
+		android:title="@string/ARG_CATEGORY_METAL_FENCE">
+	</item>
+	<item
+		android:id="@+id/menu_vinyl_fence"
+		android:title="@string/ARG_CATEGORY_VINYL_FENCE">
+	</item>
+
+</menu>

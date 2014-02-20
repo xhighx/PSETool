@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/cart_header"  android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="?android:attr/listDividerAlertDialog"
+        tools:context=".ShoppingCartFragment"
+        tools:listitem="@layout/shopping_cart_item_view" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/cart_btn_container"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cart_clear_btn"
+            style="@android:style/Holo.Light.ButtonBar.AlertDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hide" />
+
+        <Button
+            android:id="@+id/cart_close_btn"
+            style="@android:style/Holo.Light.ButtonBar.AlertDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+		android:id="@+id/menu_vinyl_siding"
+		android:title="@string/ARG_CATEGORY_VINYL_SIDING">
+	</item>
+	<item
+		android:id="@+id/menu_cement_siding"
+		android:title="@string/ARG_CATEGORY_CEMENT_SIDING">
+	</item>
+
+</menu>

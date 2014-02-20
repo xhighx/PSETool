@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+		android:id="@+id/menu_margin_minimum"
+		android:showAsAction="never"
+		android:title="@string/menu_title_margin_requirement">
+	</item>
+	<item
+		android:id="@+id/menu_about"
+		android:showAsAction="never"
+		android:title="@string/menu_title_about"/>
+
+	<item
+		android:id="@+id/menu_project_pricing_info"
+		android:icon="@android:drawable/ic_menu_agenda"
+		android:title="@string/menu_title_project_price_info">
+        <menu>
+            <item
+                android:id="@+id/menu_window"
+                android:title="@string/ARG_CATEGORY_WINDOW"
+                android:icon="@drawable/ic_launcher_doublewindow">
+            </item>
+            <item
+                android:id="@+id/menu_gutter"
+                android:title="@string/ARG_CATEGORY_GUTTER"
+                android:icon="@drawable/ic_launcher_gutter">
+            </item>
+            <item
+                android:id="@+id/menu_siding"
+                android:title="@string/ARG_CATEGORY_SIDING"
+                android:icon="@drawable/ic_jh_lap_siding">
+            </item>
+            <item
+                android:id="@+id/menu_roof"
+                android:title="@string/ARG_CATEGORY_ROOF"
+                android:icon="@drawable/ic_deserttanshingle">
+            </item>
+            <item
+                android:id="@+id/menu_door"
+                android:title="@string/ARG_CATEGORY_DOOR"
+                android:icon="@drawable/ic_entry_door_bmovallitemahfiberglass">
+            </item>
+            <item
+                android:id="@+id/menu_fencing"
+                android:title="@string/ARG_CATEGORY_FENCING"
+                android:icon="@drawable/ic_wood_fence">
+            </item>
+        </menu>
+	</item>
+
+
+</menu>

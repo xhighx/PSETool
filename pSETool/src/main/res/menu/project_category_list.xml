@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_window"
+        android:title="@string/ARG_CATEGORY_WINDOW">
+    </item>
+    <item
+        android:id="@+id/menu_gutter"
+        android:title="@string/ARG_CATEGORY_GUTTER">
+    </item>
+    <item
+        android:id="@+id/menu_siding"
+        android:title="@string/ARG_CATEGORY_SIDING">
+    </item>
+    <item
+        android:id="@+id/menu_roof"
+        android:title="@string/ARG_CATEGORY_ROOF">
+    </item>
+    <item
+        android:id="@+id/menu_door"
+        android:title="@string/ARG_CATEGORY_DOOR">
+    </item>
+    <item
+        android:id="@+id/menu_insulation"
+        android:title="@string/ARG_CATEGORY_INSULATION">
+    </item>
+    <item
+        android:id="@+id/menu_fencing"
+        android:title="@string/ARG_CATEGORY_FENCING">
+    </item>
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PSETool.iml" filepath="$PROJECT_DIR$/PSETool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pSETool/pSETool.iml" filepath="$PROJECT_DIR$/pSETool/pSETool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingUplibrary/slidingUplibrary.iml" filepath="$PROJECT_DIR$/slidingUplibrary/slidingUplibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wizardLibrary/wizardLibrary.iml" filepath="$PROJECT_DIR$/wizardLibrary/wizardLibrary.iml" />
+    </modules>
+  </component>
+</project>
+

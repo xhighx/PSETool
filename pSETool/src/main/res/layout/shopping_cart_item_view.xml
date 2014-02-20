@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@android:drawable/alert_light_frame"
+	android:contentDescription="cart item increase qty btn"
+	android:orientation="horizontal" >
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:layout_weight="1"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/fragment_cartitem_descriptiontv"
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:padding="3dp"
+			android:text="Description"
+			android:textAppearance="?android:attr/textAppearanceListItem"
+			android:textSize="12sp" />
+
+		<TextView
+			android:id="@+id/fragment_cartitem_skutv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0"
+			android:ellipsize="end"
+			android:textAppearance="?android:attr/textAppearanceListItem"
+			android:textSize="12sp" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_margin="3dp"
+		android:background="@android:drawable/edit_text"
+		android:padding="2dp" >
+
+		<ImageButton
+			android:id="@+id/fragment_cartitem_minusbtn"
+			android:layout_width="30dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="3dp"
+			android:background="@android:drawable/editbox_background_normal"
+			android:scaleType="centerCrop"
+			android:src="@drawable/btn_minus_selectable" />
+
+		<EditText
+			android:id="@+id/fragment_cartitem_quantity_etv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:background="@android:color/background_light"
+			android:hint="0"
+			android:inputType="number"
+			android:padding="8dp"
+			android:singleLine="true"
+			android:textAppearance="?android:attr/textAppearanceListItemSmall"
+			android:textSize="12sp" />
+
+		<ImageButton
+			android:id="@+id/fragment_cartitem_plusbtn"
+			android:layout_width="30dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="3dp"
+			android:background="@android:drawable/editbox_background"
+			android:contentDescription="cart item increase qty btn"
+			android:scaleType="centerCrop"
+			android:src="@drawable/btn_plus_selectable" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="1dp"
+		android:layout_weight="0"
+		android:orientation="vertical"
+		android:padding="3dp" >
+
+		<TextView
+			android:id="@+id/fragment_cartitem_pricetv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:hint="@string/hint_currency_placeholder"
+			android:padding="3dp"
+			android:textAppearance="?android:attr/textAppearanceListItem"
+			android:textSize="12sp" />
+
+		<TextView
+			android:id="@+id/fragment_cartitem_totalpricetv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:hint="@string/hint_currency_placeholder"
+			android:padding="3dp"
+			android:textAppearance="?android:attr/textAppearanceListItem"
+			android:textSize="12sp" />
+	</LinearLayout>
+
+</LinearLayout>

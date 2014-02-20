@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/cont"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@android:color/darker_gray"
+	android:baselineAligned="false"
+	android:orientation="horizontal"
+	android:padding="2dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <EditText
+            android:id="@+id/fragment_cartitem_quantity_etv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:textSize="12sp"
+            android:numeric="integer"
+            android:imeOptions="actionDone"
+            android:padding="2dp"
+            android:layout_margin="1dp"
+            android:focusableInTouchMode="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <ImageButton
+                android:id="@+id/fragment_cartitem_minusbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="cart item decrease qty btn"
+                android:scaleType="center"
+                android:src="@drawable/btn_minus"
+                android:padding="5dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/darker_gray" />
+
+            <ImageButton
+                android:id="@+id/fragment_cartitem_plusbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="cart item increase qty btn"
+                android:scaleType="center"
+                android:src="@drawable/btn_plus"
+                android:padding="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+		android:contentDescription="cart item increase qty btn"
+		android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_weight="1">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="1dp"
+			android:layout_weight="1"
+			android:orientation="vertical" >
+
+			<TextView
+				android:id="@+id/fragment_cartitem_descriptiontv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="Description"
+				android:textAppearance="?android:attr/textAppearanceListItem"
+				android:textSize="12sp"
+                android:textAlignment="center" />
+
+			<TextView
+				android:id="@+id/fragment_cartitem_skutv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="0"
+				android:ellipsize="end"
+				android:textAppearance="?android:attr/textAppearanceListItem"
+				android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fragment_cartitem_modeltv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textSize="12sp"
+                android:layout_weight="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical"
+            android:id="@+id/fragment_cartitem_cost_container"
+            android:padding="1dp"
+            android:layout_weight="0">
+
+            <TextView
+                android:id="@+id/label_item_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="@string/label_cost"
+                android:textSize="8sp"
+                android:paddingBottom="2dp" />
+
+            <TextView
+                android:id="@+id/fragment_cartitem_costtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_currency_placeholder"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/label_item_total_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="Retail:"
+                android:textSize="8sp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:id="@+id/fragment_cartitem_pricetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_currency_placeholder"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="2dp"
+			android:layout_marginRight="2dp"
+			android:orientation="vertical"
+			android:padding="1dp"
+            android:id="@+id/fragment_cartitem_price_container"
+            android:layout_weight="0">
+
+			<TextView
+				android:id="@+id/label_item_price"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="left"
+                android:text="@string/label_total"
+				android:textSize="8sp"
+                android:paddingBottom="2dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/fragment_cartitem_totalcosttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_currency_placeholder"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textSize="12sp"
+                android:layout_weight="0" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/label_total"
+                android:textSize="8sp"
+                android:paddingTop="2dp"
+                android:layout_weight="1" />
+
+            <TextView
+				android:id="@+id/fragment_cartitem_totalpricetv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="2dp"
+				android:layout_marginRight="2dp"
+				android:layout_weight="0"
+				android:gravity="center_vertical"
+				android:hint="@string/hint_currency_placeholder"
+				android:textAppearance="?android:attr/textAppearanceListItem"
+				android:textSize="12sp" />
+		</LinearLayout>
+	</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0">
+
+        <ImageButton
+            android:id="@+id/fragment_cartitem_deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="?android:attr/actionBarItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/fragment_cartitem_infobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="?android:attr/actionBarItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_info_details"
+            android:layout_weight="1"
+            android:cropToPadding="false" />
+    </LinearLayout>
+
+</LinearLayout>
